@@ -1,1 +1,1 @@
-probabilityList =[1,1,1,]
+probabilityList =[1,1,1,1]
