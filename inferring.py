@@ -30,13 +30,13 @@ def infer(filename):
     'Y': ['TAC', 'TAT'],
     '_': ['TAA', 'TAG', 'TGA'],
     }
-
+  
     chance = 1
     for amino in sequence:
         chance *= (len(codons[amino]))
         chance %= 1E6
         
-    return chance*3 # multiplying by three accounts for potential variance in stop codons
+    return (chance*3)%1E6 # multiplying by three accounts for potential variance in stop codons
 
 probability = infer("rosalind_mrna.txt")
 print(probability)
