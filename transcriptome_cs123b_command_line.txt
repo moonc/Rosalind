@@ -1,0 +1,9 @@
+collapse_reads_md.pl  output_349.fasta > 349_collapsed.fasta seq -a
+quantifier.pl -p ~/miRNA_stem-loop_seq.fasta -m ~/mature_miRNA_AT.fasta -r 349_collapsed.fasta -s ~/star_miRNA_seq.fasta -e 2 -f 5 -g 1
+
+
+mapper.pl ~/mirna_trimmed/SRR11611354_MIRNASEQ_BL.fastqsanger.gz_trimmed.fq -e -h -j -l 18 -m -s output_354.fasta -v
+
+
+collapse_reads_md.pl  output_349.fasta > 349_collapsed.fasta seq -a
+quantifier.pl -p ~/miRNA_stem-loop_seq.fasta -m ~/mature_miRNA_AT.fasta -r 349_collapsed.fasta -s ~/star_miRNA_seq.fasta -e 2 -f 5 -g 1

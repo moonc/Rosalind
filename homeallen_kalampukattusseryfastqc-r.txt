@@ -1,0 +1,1 @@
+/home/allen_kalampukattussery/fastqc-reports/SRR11611350_MIRNASEQ_CTL.fastqsanger_fastqc.html
